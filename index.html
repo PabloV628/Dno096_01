@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <style>
+    /* para todo comentario */
+    html, body {
+      margin: 0;
+      padding: 0;
+      cursor: crosshair;
+    }
+    canvas {
+      display: block;
+    }
+    h1{
+      position: absolute;
+      top:1rem;
+      left:3rem;
+      z-index:2;
+    }
+
+    p{
+    position: absolute;
+    width:50vw;
+    top:4rem;
+    left:3rem;
+    z-index:2;
+  }
+
+  </style>
+
+  </head>
+  <body>
+    <main>
+
+    <h1> Hola mundo! :) </h1>
+    <p> Tomé este curso porque siempre me ha interesado el diseño de UI/UX, el diseño de aplicaciones y la creación de interfaces en general. También porque desde hace tiempo he querido tener mi propia página para mostrar mi portafolio. Hasta ahora he aprendido bastante de la parte de diseño usando Figma, pero si quiero llevar mis ideas a algo mas real necesitaba aprender mas sobre programación y creo que este curso es una muy buena manera de iniciarme en ello. Además, como diseñador gráfico considero que esta es una habilidad fundamental hoy en día ya que todo se está digitalizando cada vez más. </p>
+
+    </main>
+
+    <script>
+    function setup() {
+        createCanvas(windowWidth, windowHeight);
+        background(0, 230, 200);
+        stroke(100);
+      }
+
+      function draw() {
+        line(pmouseX, pmouseY, mouseX, mouseY);
+      }
+    </script>
+
+  </body>
+</html>
